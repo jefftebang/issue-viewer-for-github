@@ -28,10 +28,6 @@ DB_USERNAME=[username of your database]
 
 DB_PASSWORD=[password of your database]
 
-Run this to migrate tables:
-
-`php artisan migrate`
-
 Run this to install composer packages:
 
 `composer install` or `composer update`
@@ -43,6 +39,10 @@ Run this to generate key
 Run this to install npm packages:
 
 `npm install`
+
+Run this to migrate tables:
+
+`php artisan migrate`
 
 Create an OAth Application on your GitHub account:
 https://github.com/settings/applications/new
