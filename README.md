@@ -17,10 +17,15 @@ Run this to reate an .env file:
 Fill in the value of the details below:
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=[name of the schema where you will store the data]
+
 DB_USERNAME=[username of your database]
+
 DB_PASSWORD=[password of your database]
 
 Run this to migrate tables:
@@ -57,7 +62,9 @@ Go to the created .env file and scroll to the bottom.
 Fill in the value of the details below. You can get it in your created OAth Application on GitHub.
 
 GITHUB_CLIENT_ID=
+
 GITHUB_CLIENT_SECRET=
+
 GITHUB_CLIENT_REDIRECT_URL=
 
 Finally, you can run the project.
@@ -65,6 +72,7 @@ Finally, you can run the project.
 Run this on your terminal:
 
 `php aritsan serve`
+
 `npm run dev`
 
 and then open http://localhost:8000 in your browser.
