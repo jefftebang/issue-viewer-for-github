@@ -30,7 +30,7 @@ DB_PASSWORD=[password of your database]
 
 Run this to migrate tables:
 
-`php aritsan migrate`
+`php artisan migrate`
 
 Run this to install composer packages:
 
@@ -71,7 +71,7 @@ Finally, you can run the project.
 
 Run this on your terminal:
 
-`php aritsan serve`
+`php artisan serve`
 
 `npm run dev`
 
