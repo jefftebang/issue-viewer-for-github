@@ -73,6 +73,8 @@ Run this on your terminal:
 
 `php artisan serve`
 
+Open a new tab or new window in your terminal, then run this:
+
 `npm run dev`
 
 and then open http://localhost:8000 in your browser.
