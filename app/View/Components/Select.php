@@ -12,15 +12,17 @@ class Select extends Component
     public $arrToMap;
     public $opts;
     public $selId;
+    public $className;
     /**
      * Create a new component instance.
      */
-    public function __construct($selectNoValue, $arrToMap, $opts, $selId)
+    public function __construct($selectNoValue, $arrToMap, $opts, $selId, $className)
     {
         $this->arrToMap = $arrToMap;
         $this->selectNoValue = $selectNoValue;
         $this->opts = $opts;
         $this->selId = $selId;
+        $this->className = $className;
     }
 
     /**

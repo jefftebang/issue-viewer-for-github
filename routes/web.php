@@ -15,5 +15,5 @@ Route::get('/auth/logout', [LoginController::class, 'logOutUser'])->name('logout
 // Home page
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-// Issue view details page
-Route::get('/repos/{repo}/issues/{issueNumber}', [IssueController::class, "index"]);
+// Issue view details
+Route::get('/repos/{org}/{repo}/issues/{issueNumber}', [IssueController::class, "index"]);

@@ -12,8 +12,12 @@ $(document).ready(function(){
 
   getIssueDetails();
   
-  function getIssueDetails() {
+  function getIssueDetails () {
     try {
+      const issueByRepoURL = "https://api.github.com/repos/{!! Auth::User()->nickname !!}/{!! $repo !!}/issues/{!! $issueNumber !!}";
+      const orgName = "{!! $org !!}";
+      const issueByOrgURL = "https://api.github.com/repos/" + orgName + "/{!! $repo !!}/issues/{!! $issueNumber !!}"
+
       $.ajaxSetup({
         Headers,
       });
@@ -21,7 +25,7 @@ $(document).ready(function(){
         beforeSend: function (xhr) {
           xhr.setRequestHeader("Authorization", "Bearer " + "{!! Auth::User()->github_token !!}");
         },
-        url: "https://api.github.com/repos/{!! Auth::User()->nickname !!}/{!! $repo !!}/issues/{!! $issueNumber !!}",
+        url: orgName !== "n" ? issueByOrgURL : issueByRepoURL,
         type: "GET",
         dataType: "json",
         success: (response) => {
